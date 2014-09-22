@@ -4,15 +4,15 @@ Task 1: Conversion Utility
 ==========================
 Tool A: Address Conversion:
 --------------------------
-	This tool needs to perform different address conversions. The program has to execute the related conversion module bases on the command line inputs provided by the users. Functionalities and formulae: 
-	1. Logical To Physical Address: Logical Address + Offset 
-	2. Physical To Logical Address: Physical Address - Offset 
-	3. Physical To Cluster Address: (((physical address - start) - rsrv_sectors - (no_of_fat_tables * sec_per_fat)) / sec_per_cluster) + 2; 
-	4. Logical To Cluster Address: (( (logical address ) - rsrv_sectors - (no_of_fat_tables * sec_per_fat)) / sec_per_cluster) + 2; 
-	5. Cluster To Physical Address: startoffset+ rsrv_sectors + (no_of_fat) * sec_per_fat + (address - 2)* sec_per_cluster 
-	6. Cluster To Logical Address: rsrv_sectors + (no_of_fat) * sec_per_fat + (address - 2)* sec_per_cluster 
+This tool needs to perform different address conversions. The program has to execute the related conversion module bases on the command line inputs provided by the users. Functionalities and formulae: 
+1. Logical To Physical Address: Logical Address + Offset 
+2. Physical To Logical Address: Physical Address - Offset 
+3. Physical To Cluster Address: (((physical address - start) - rsrv_sectors - (no_of_fat_tables * sec_per_fat)) / sec_per_cluster) + 2; 
+4. Logical To Cluster Address: (( (logical address ) - rsrv_sectors - (no_of_fat_tables * sec_per_fat)) / sec_per_cluster) + 2; 
+5. Cluster To Physical Address: startoffset+ rsrv_sectors + (no_of_fat) * sec_per_fat + (address - 2)* sec_per_cluster 
+6. Cluster To Logical Address: rsrv_sectors + (no_of_fat) * sec_per_fat + (address - 2)* sec_per_cluster 
 	
-	Also program checks the different input arguments and if the valid arguments are not provided it displays the error message with missing parameters. 
+Also program checks the different input arguments and if the valid arguments are not provided it displays the error message with missing parameters. 
 	
 Tool B: MAC Conversion:
 -----------------------
